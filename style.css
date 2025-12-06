@@ -1,0 +1,351 @@
+/* 1. Global Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tiêu đề các mục */
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #ff00bf;
+    border-bottom: 2px solid #08daff;
+    text-transform: uppercase;
+}
+
+/* 2. Header */
+
+.main-header{
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.logo span {
+    color: #ff00bf;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ff00bf;
+    border-bottom: 3px solid #08daff;
+}
+
+.banner {
+    height: 350px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #ff00bf;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 0, 195, 0.95);
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.banner-text {
+    color: white;
+}
+
+.banner-text .school-name {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    border-left: 5px solid #ffcc00;
+    padding-left: 10px;
+}
+
+.banner-text h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    margin: 5px 0;
+    line-height: 1.1;
+}
+
+.banner-text .english-text {
+    font-size: 1em;
+    color: #081cff;
+    font-style: italic;
+}
+
+/* 4. Main Content 2 cột */
+.main-content-layout {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.news-section {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+/* 5. News Grid (3 cột) */
+.news-grid {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    flex: 1;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #eee;
+    transition: box-shadow 0.3s;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.news-item p {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9em;
+    padding: 10px 5px;
+}
+
+/* 6. Sidebar */
+.events {
+    margin-bottom: 20px;
+}
+
+.events ul {
+    list-style: none;
+}
+.events ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.events ul li:last-child {
+    border-bottom: none;
+}
+
+.events .date {
+    color: #08daff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.contact-info {
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Tin tức cuối trang */
+.bottom-news-section {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.fx{
+    text-align: center;
+}
+.news-section h4 {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 0.5px solid #010101;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.news-section h3 {
+    color:#ff00bf;
+}
+.events .member {
+    color: #08daff;
+    font-weight: bold;
+    margin-right: 5px;
+} 
+.medal .body-medal{
+    list-style: none;
+    color:#555
+}
+
+.medal h2{
+    margin-top: 30px;
+}
+.body-call{
+    background-color: white;
+    padding: 20px;
+
+}
+.body-call h2{
+    border-bottom: none;
+    color:#ff00bf;
+}
+.body-call{
+    margin:20px;
+    position:relative;
+}
+.body-call ul{
+    list-style: none;
+}
+.temple{
+    margin-top: 40px;
+    padding-top: 0 20px;
+    padding-bottom: 100px;
+}
+.content-call{
+    display:flex;
+    justify-content: space-between;
+}
+.time-active{
+    flex-grow: 1;
+    width:70%;
+}
+.anyside{
+    display:flex;
+    flex:1;
+    padding:20px;
+    margin: 20px;
+    background-color:white;
+}
+
+.body-call p{
+    margin:20px;
+}
+.ltx{
+    margin:10px;
+}
+.image-thanhtich{
+    width:280px;
+    margin-top: 20px;
+}
+
+.map-content{
+    width: 400px;
+    transition: box-shadow 0.3s;
+    position: absolute;
+    right:150px;
+    top:30px;
+}
+
+.map-content:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.x{
+    border-bottom: none;
+    margin-bottom: 10px;
+    margin-top:30px;
+    padding:0;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-left {
+        width: 30%;
+        margin-right: 15px;
+    }
+
+    .main-content {
+        width: 65%;
+    }
+    .sidebar-right {
+        width: 100%; 
+        order: 4; 
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar-left {
+        width: 20%; 
+        order: 1;
+    }
+
+    .main-content {
+        width: 55%; 
+        order: 2; 
+    }
+
+    .sidebar-right {
+        width: 20%; 
+        order: 3; 
+        margin-bottom: 0; 
+    }
+}
